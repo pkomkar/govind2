@@ -1,0 +1,2868 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "English For All Service",
+      "description": " English For All Services User,Admin,Member  Api Created."
+    },
+    "content-Type":"text/plain",
+    "basePath": "/",
+    "tags": [
+    
+{
+    "name":"User",
+    "Description":"User Details "
+}
+    ],
+    "paths": {
+      "/api/v1/user/CreateUserDetails": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "description": "Create User Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"User",
+                "schema": {
+                    "$ref": "#/definitions/User"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/user/getAllUser":{
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "description": "Get User Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/getUser":{
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "description": "Get User Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/user/updateUserDetails":{
+        "put": {
+          "tags": [
+            "User"
+          ],
+          "description": "Edit User",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"User",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "User found update the User details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/user/deleteUserDetails/{UserId}": {
+        "delete": {
+          "tags": [
+            "User"
+          ],
+          "description": "Delete User By UserId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/user/getSingleUserDetails/{UserId}": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "description": "get single User By UserId",
+          "parameters": [
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Category/CreateCourseCategoryDetails": {
+        "post": {
+          "tags": [
+            "CourseCategory"
+          ],
+          "description": "Create CourseCategory Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"CourseCategory",
+                "schema": {
+                    "$ref": "#/definitions/CourseCategory"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Category/getAllCourseCategory":{
+        "get": {
+          "tags": [
+            "CourseCategory"
+          ],
+          "description": "Get CourseCategory Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Category/updateCourseCategoryDetails":{
+        "put": {
+          "tags": [
+            "CourseCategory"
+          ],
+          "description": "Edit CourseCategory",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"CourseCategory",
+            "schema": {
+              "$ref": "#/definitions/CourseCategory"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "CourseCategory found update the CourseCategory details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/Category/deleteCourseCategoryDetails/{CategoryId}": {
+        "delete": {
+          "tags": [
+            "CourseCategory"
+          ],
+          "description": "Delete CourseCategory By UserId",
+          "parameters": [
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Category/getSingleCourseCategoryDetails/{CategoryId}": {
+        "get": {
+          "tags": [
+            "CourseCategory"
+          ],
+          "description": "get single CourseCategory By UserId",
+          "parameters": [
+         
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/SubCategory/CreateCourseSubCategoryDetails": {
+        "post": {
+          "tags": [
+            "CourseSubCategory"
+          ],
+          "description": "Create CourseSubCategory Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"CourseSubCategory",
+                "schema": {
+                    "$ref": "#/definitions/CourseSubCategory"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/SubCategory/getAllCourseSubCategory":{
+        "get": {
+          "tags": [
+            "CourseSubCategory"
+          ],
+          "description": "Get CourseSubCategory Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/SubCategory/updateCourseSubCategoryDetails":{
+        "put": {
+          "tags": [
+            "CourseSubCategory"
+          ],
+          "description": "Edit CourseSubCategory",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"CourseSubCategory",
+            "schema": {
+              "$ref": "#/definitions/CourseSubCategory"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "CourseSubCategory found update the CourseSubCategory details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/SubCategory/deleteCourseSubCategoryDetails/{SubCategoryId}": {
+        "delete": {
+          "tags": [
+            "CourseSubCategory"
+          ],
+          "description": "Delete CourseSubCategory By UserId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/SubCategory/getSingleCourseSubCategoryDetails/{SubCategoryId}": {
+        "get": {
+          "tags": [
+            "CourseSubCategory"
+          ],
+          "description": "get single CourseSubCategory By UserId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Course/CreateCourseDetails": {
+        "post": {
+          "tags": [
+            "Course"
+          ],
+          "description": "Create Course Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Course",
+                "schema": {
+                    "$ref": "#/definitions/Course"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Course/getCourseDetailsByCourseName": {
+        "post": {
+          "tags": [
+            "Course"
+          ],
+          "description": "get Course Details by Course Name",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Course",
+               "example":{
+                "CourseName":""
+               }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Course/getCourseDetailsByCategoryName": {
+        "post": {
+          "tags": [
+            "Course"
+          ],
+          "description": "get Course Details By Category Name",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Course",
+               "example":{
+                "CategoryName":""
+               }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Course/getAllCourseDetails":{
+        "get": {
+          "tags": [
+            "Course"
+          ],
+          "description": "Get Course Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Course/updateCourseDetails":{
+        "put": {
+          "tags": [
+            "Course"
+          ],
+          "description": "Edit Course",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"Course",
+            "schema": {
+              "$ref": "#/definitions/Course"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Course found update the Course details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/Course/deleteCourseDetails/{CourseId}": {
+        "delete": {
+          "tags": [
+            "Course"
+          ],
+          "description": "Delete Course By UserId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Course/getSingleCourseDetails/{CourseId}": {
+        "get": {
+          "tags": [
+            "Course"
+          ],
+          "description": "get single Course By UserId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Course/InprogressApi":{
+        "get": {
+          "tags": [
+            "Course"
+          ],
+          "description": "Get Course Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/lession/CreatelessionDetails": {
+        "post": {
+          "tags": [
+            "Lession"
+          ],
+          "description": "Create Lession Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Lession",
+                "schema": {
+                    "$ref": "#/definitions/Lession"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/lession/getAlllessionDetails":{
+        "get": {
+          "tags": [
+            "Lession"
+          ],
+          "description": "Get Lession Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/lession/updatelessionDetails":{
+        "put": {
+          "tags": [
+            "Lession"
+          ],
+          "description": "Edit Lession",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"Lession",
+            "schema": {
+              "$ref": "#/definitions/Lession"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Lession found update the Lession details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/lession/deletelessionDetails/{lessionId}": {
+        "delete": {
+          "tags": [
+            "Lession"
+          ],
+          "description": "Delete Lession By lessionId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/lession/getSinglelessionDetails/{lessionId}": {
+        "get": {
+          "tags": [
+            "Lession"
+          ],
+          "description": "get single Lession By lessionId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/banner/CreateBannerDetails": {
+        "post": {
+          "tags": [
+            "Banner"
+          ],
+          "description": "Create Banner Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Banner",
+                "schema": {
+                    "$ref": "#/definitions/Banner"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/banner/getAllBannerDetails":{
+        "get": {
+          "tags": [
+            "Banner"
+          ],
+          "description": "Get Banner Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/banner/updateBannerDetails":{
+        "put": {
+          "tags": [
+            "Banner"
+          ],
+          "description": "Edit Banner",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"Banner",
+            "schema": {
+              "$ref": "#/definitions/Banner"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Banner found update the Banner details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/banner/deleteBannerDetails/{BannerId}": {
+        "delete": {
+          "tags": [
+            "Banner"
+          ],
+          "description": "Delete Banner By BannerId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/banner/getSingleBannerDetails/{BannerId}": {
+        "get": {
+          "tags": [
+            "Banner"
+          ],
+          "description": "get single Banner By BannerId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Enrollment/CreateEnrollmentDetails": {
+        "post": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "Create EnrollerMent Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"EnrollerMent",
+                "schema": {
+                    "$ref": "#/definitions/EnrollerMent"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Enrollment/getAllEnrollmentDetails":{
+        "get": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "Get EnrollerMent Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Enrollment/updateEnrollmentDetails":{
+        "put": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "Edit EnrollerMent",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"EnrollerMent",
+            "schema": {
+              "$ref": "#/definitions/EnrollerMent"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Banner found update the Banner details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/Enrollment/deleteEnrollmentDetails/:{EnrollmentId}": {
+        "delete": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "Delete EnrollerMent By EnrollmentId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"EnrollerMent",
+              "type":"object",
+              "example":{
+                "EnrollmentId":""
+                        
+              }
+            }  
+
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Enrollment/getSingleEnrollmentDetails/{EnrollmentId}": {
+        "get": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "get single EnrollerMent By EnrollmentId",
+          "parameters": [
+          
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Enrollment/getAllEnrollmentbyQuizAndUserId": {
+        "post": {
+          "tags": [
+            "EnrollerMent"
+          ],
+          "description": "get EnrollerMent By QuizId and UserId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"Score",
+              "type":"object",
+              "example":{
+                "QuizId":"",
+                    "UserId":""    
+              }
+            } 
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/addtocart/CreateaddtoCartDetails": {
+        "post": {
+          "tags": [
+            "Cart"
+          ],
+          "description": "Create Cart Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Cart",
+                "schema": {
+                    "$ref": "#/definitions/Cart"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/addtocart/getAllCart":{
+        "get": {
+          "tags": [
+            "Cart"
+          ],
+          "description": "Get Cart Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/addtocart/updateCartDetails":{
+        "put": {
+          "tags": [
+            "Cart"
+          ],
+          "description": "Edit Cart",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"Cart",
+            "schema": {
+              "$ref": "#/definitions/Cart"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Cart found update the Cart details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/addtocart/deleteCartDetails/:{CartId}": {
+        "delete": {
+          "tags": [
+            "Cart"
+          ],
+          "description": "Delete Cart By CartId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Review/CreatereviewDetails": {
+        "post": {
+          "tags": [
+            "Review"
+          ],
+          "description": "Create Review Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Review",
+                "schema": {
+                    "$ref": "#/definitions/Review"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Review/getAllReview":{
+        "get": {
+          "tags": [
+            "Review"
+          ],
+          "description": "Get Review Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Review/getReviewbyCourse":{
+        "post": {
+          "tags": [
+            "Review"
+          ],
+          "description": "Get Review Details by CourseId",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   "parameters":[ 
+     {
+      "id":"",
+      "in":"body",
+      "name":"Review",
+      "type":"object",
+      "example":{
+        "CourseId":""
+                
+      }
+    }  
+   ],
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+     
+      "/api/v1/Review/deleteReviewDetails:{ReviewId}": {
+        "delete": {
+          "tags": [
+            "Review"
+          ],
+          "description": "Delete Review By ReviewId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Rating/getAllrating":{
+        "get": {
+          "tags": [
+            "Rating"
+          ],
+          "description": "Get Rating Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Quiz/AddQuizDetails": {
+        "post": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "Create Quiz Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Quiz",
+                "schema": {
+                    "$ref": "#/definitions/Quiz"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Quiz/getAllQuiz":{
+        "get": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "Get Quiz Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Quiz/getQuizDetailsbyCourseId":{
+        "post": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "Get Quiz Details by CourseId",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   "parameters":[ 
+     {
+      "id":"",
+      "in":"body",
+      "name":"Quiz",
+      "type":"object",
+      "example":{
+        "CourseId":""
+                
+      }
+    }  
+   ],
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+     
+      "/api/v1/Quiz/deleteQuizDetails/:{QuizId}": {
+        "delete": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "Delete Quiz By QuizId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Quiz/getSingleQuizDetails": {
+        "post": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "get Quiz By QuizId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"Quiz",
+              "type":"object",
+              "example":{
+                "QuizId":""
+                        
+              }
+            } 
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Quiz/updateQuizDetails":{
+        "put": {
+          "tags": [
+            "Quiz"
+          ],
+          "description": "Edit Quiz",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"Quiz",
+            "schema": {
+              "$ref": "#/definitions/Quiz"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "Quiz found update the Quiz details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/QuizQuestion/CreateQuizQuestionDetails": {
+        "post": {
+          "tags": [
+            "OuizQuestion"
+          ],
+          "description": "Create OuizQuestion Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"OuizQuestion",
+                "schema": {
+                    "$ref": "#/definitions/OuizQuestion"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/QuizQuestion/getAllQuizQuestionbyQuizId":{
+        "post": {
+          "tags": [
+            "OuizQuestion"
+          ],
+          "description": "Get OuizQuestion Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters":[
+            {
+              "id":"",
+              "in":"body",
+              "name":"OuizQuestion",
+              "type":"object",
+              "example":{
+                "QuizId":""
+                        
+              }
+            } 
+          ],
+
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      
+      "/api/v1/QuizQuestion/deleteQuizQuestionDetails/:{QuizQuestionId}": {
+        "delete": {
+          "tags": [
+            "OuizQuestion"
+          ],
+          "description": "Delete OuizQuestion By QuizId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/QuizQuestion/getSingleQuizQuestionDetails/:{QuizQuestionId}": {
+        "get": {
+          "tags": [
+            "OuizQuestion"
+          ],
+          "description": "get OuizQuestion By QuizId",
+          "parameters": [
+      
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/QuizQuestion/updateQuizQuestionrDetails":{
+        "put": {
+          "tags": [
+            "OuizQuestion"
+          ],
+          "description": "Edit OuizQuestion",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+          {
+            "in":"body",
+            "name":"OuizQuestion",
+            "schema": {
+              "$ref": "#/definitions/OuizQuestion"
+            }
+          }
+           
+          ],
+          "responses": {
+            "200": {
+            
+              "description": "OuizQuestion found update the OuizQuestion details."
+            },
+            "500": {
+              "description": "Server Failure."
+            }
+          }
+        }
+      },
+      "/api/v1/Score/CreateScoreDetails": {
+        "post": {
+          "tags": [
+            "Score"
+          ],
+          "description": "Create Score Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Score",
+                "schema": {
+                    "$ref": "#/definitions/Score"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Score/getAllscorebyQuizId": {
+        "post": {
+          "tags": [
+            "Score"
+          ],
+          "description": "get Score By QuizId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"Score",
+              "type":"object",
+              "example":{
+                "QuizId":""
+                        
+              }
+            } 
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Score/getAllscorebyQuizAndUserId": {
+        "post": {
+          "tags": [
+            "Score"
+          ],
+          "description": "get Score By QuizId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"Score",
+              "type":"object",
+              "example":{
+                "QuizId":"",
+                    "UserId":""    
+              }
+            } 
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/Score/getAllscore":{
+        "get": {
+          "tags": [
+            "Score"
+          ],
+          "description": "Get Score Details",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      
+      "/api/v1/Billing/CreatebillingDetails": {
+        "post": {
+          "tags": [
+            "BillingDetails"
+          ],
+          "description": "Create Billing Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"BillingDetails",
+                "schema": {
+                    "$ref": "#/definitions/BillingDetails"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Billing/getAllbilling":{
+        "get": {
+          "tags": [
+            "BillingDetails"
+          ],
+          "description": "Get Billing Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Billing/deletebillingDetails/:{BillinId}": {
+        "delete": {
+          "tags": [
+            "BillingDetails"
+          ],
+          "description": "Delete BillingDetails By BillinId",
+          "parameters": [
+            {
+              "id":"",
+              "in":"body",
+              "name":"BillingDetails",
+              "type":"object",
+              "example":{
+                "BillinId":""
+                        
+              }
+            } 
+          ],
+          "responses": {
+            "200": {
+             
+              "description": "OK"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/api/v1/State/getAllState":{
+        "get": {
+          "tags": [
+            "State"
+          ],
+          "description": "Get State Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Country/getStatebyCountry":{
+        "get": {
+          "tags": [
+            "Country"
+          ],
+          "description": "Get Country Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+   
+        "responses": {
+          "201": {
+           
+            "description": "Get"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Order/CreateOrderDetails": {
+        "post": {
+          "tags": [
+            "Order"
+          ],
+          "description": "Create Order Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"Order",
+                "schema": {
+                    "$ref": "#/definitions/Order"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/Order/getAllorder": {
+        "post": {
+          "tags": [
+            "Order"
+          ],
+          "description": "Create Order Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+             
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+
+      "/api/v1/admin/Adminlogin": {
+        "post": {
+          "tags": [
+            "Admin"
+          ],
+          "description": " Admin Login",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "name":"Admin",
+                "schema": {
+                    "name":"Admin",
+                   "type":"object",
+                    "example":{
+                      "Email":"",
+                      "Password":""
+                    }
+                  }
+            }    
+        ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            
+            },
+           
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/api/v1/user/Userlogin": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "description": " User Login",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "name":"User",
+                "schema": {
+                    "name":"User",
+                   "type":"object",
+                    "example":{
+                      "Email":"",
+                      "Password":""
+                    }
+                  }
+            }    
+        ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            
+            },
+           
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/api/v1/admin/resetPasswordforAdmin": {
+        "post": {
+          "tags": [
+            "Admin"
+          ],
+          "description": " Password Change  Successfully for admin",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "name":"Admin",
+                "schema": {
+                    "name":"Admin",
+                   "type":"object",
+                    "example":{
+                      "Email":"",
+                      "Password":""
+                    }
+                  }
+            }    
+        ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            
+            },
+           
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/api/v1/user/emailSendforUser": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "description": " send email for forgot Password",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "name":"User",
+                "schema": {
+                    "name":"User",
+                   "type":"object",
+                    "example":{
+                      "Email":""
+                    }
+                  }
+            }    
+        ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            
+            },
+           
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/api/v1/user/changePasswordforUser": {
+        "post": {
+          "tags": [
+            "User"
+          ],
+          "description": " Password Change Successfully",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "name":"User",
+                "schema": {
+                    "name":"User",
+                   "type":"object",
+                    "example":{
+                      "Email":"",
+                      "Password":"",
+                      "otp":""
+                      
+                    }
+                  }
+            }    
+        ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            
+            },
+           
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/api/v1/addImage": {
+        "post": {
+          "tags": [
+            "file"
+          ],
+          "description": "Create file Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"file",
+                "schema": {
+                    "$ref": "#/definitions/File"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      },
+      "/api/v1/createlessoniscomplated": {
+        "post": {
+          "tags": [
+            "lessonIscomplated"
+          ],
+          "description": "Create lessonIscomplated Details ",
+          "consumes": [
+            "text/plain"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "in":"body",
+                "required":true,
+                "name":"lessonIscomplated",
+                "schema": {
+                    "$ref": "#/definitions/lessonIscomplated"
+                  }
+            }    
+        ],
+        "responses": {
+          "201": {
+           
+            "description": "Created"
+          
+          },
+         
+          "500": {
+            "description": "Internal Server Error"
+          }
+
+        }
+        }
+      }
+    },
+    "definitions":{
+        "User":{
+            "type":"object",
+            "properties":{
+              "UserId":{
+                "type":"String",
+                "example":""
+            },
+              "userName":{
+                "type":"String",
+                "example":""
+            },
+              "Mobile":{
+                "type":"Number",
+                "example":""
+              },
+                "Email":{
+                    "type":"String",
+                    "example":""
+                    
+                },
+                "Password":{
+                  "type":"String",
+                  "example":""
+                
+              },
+                "AccountStatus":{
+                    "type":"Boolean",
+                    "example":""
+                },
+                "DOB":{
+                  "type":"String",
+                  "example":""
+              },
+              "Gender":{
+                  "type":"String",
+                  "example":""
+              }
+               
+            }
+        },
+        "CourseCategory":{
+          "type":"object",
+          "properties":{
+            "CategoryId":{
+              "type":"Number",
+              "example":""
+          },
+            "CategoryName":{
+              "type":"String",
+              "example":""
+          },
+        
+              "CategoryStatus":{
+                  "type":"Boolean",
+                  "example":""
+              }
+             
+          }
+      },
+      "CourseSubCategory":{
+        "type":"object",
+        "properties":{
+          "SubCategoryId":{
+            "type":"Number",
+            "example":""
+          },
+          "CategoryId":{
+            "type":"Number",
+            "example":""
+        },
+          "SubCategoryName":{
+            "type":"String",
+            "example":""
+        },
+      
+            "SubCategoryStatus":{
+                "type":"Boolean",
+                "example":""
+            }
+           
+        }
+    },
+    "Course":{
+      "type":"object",
+      "properties":{
+        "CourseId":{
+          "type":"Number",
+          "example":""
+        },
+        "SubCategoryId":{
+          "type":"Number",
+          "example":""
+        },
+        "CategoryId":{
+          "type":"Number",
+          "example":""
+      },
+        "CourseName":{
+          "type":"String",
+          "example":""
+      },
+    
+      "CourseDuration":{
+        "type":"String",
+        "example":""
+    },
+    "WhatWeCover":{
+      "type":"String",
+      "example":""
+  },
+  "CoursePrice":{
+      "type":"Number",
+      "example":""
+  },
+  "NoofLession":{
+      "type":"Number",
+      "example":""
+  },
+  "AuthorName":{
+    "type":"String",
+    "example":""
+},
+"levelofCourse":{
+    "type":"String",
+    "example":""
+}
+  
+         
+      }
+  },
+  "Lession":{
+    "type":"object",
+    "properties":{
+      "lessionId":{
+        "type":"Number",
+        "example":""
+    },
+    "CourseId":{
+      "type":"Number",
+      "example":""
+  },
+  "CategoryId":{
+    "type":"Number",
+    "example":""
+},
+"SubCategoryId":{
+  "type":"Number",
+  "example":""
+},
+"lessionNo":{
+  "type":"Number",
+  "example":""
+},
+"lessionName":{
+  "type":"String",
+  "example":""
+},
+"Iscomplated":{
+  "type":"Boolean",
+  "default":false
+}
+
+    }
+  },
+  "Banner":{
+    "type":"object",
+    "properties":{
+      "BannerId":{
+        "type":"Number",
+        "example":""
+    },
+   "BannerTitle":{
+     "type":"String",
+     "example":""
+    }   
+   
+    }
+  },
+  "EnrollerMent":{
+    "type":"object",
+    "properties":{
+      "Date":{
+        "type":"String",
+        "example":""
+    },
+    "EnrollmentId":{
+        "type":"String",
+        "example":""
+    },
+    "CourseId":{
+        "type":"Number",
+        "example":""
+    },   
+    "UserId":{
+        "type":"String",
+        "example":""
+    },
+    "QuizId":{
+      "type":"Number",
+      "example":""
+  },
+    "Status":{
+        "type":"Boolean",
+        "example":""
+    },
+    "TotalAmount":{
+      "type":"Number",
+      "example":""
+  },
+  "AmountPaid":{
+      "type":"Number",
+      "example":""
+  }
+    }
+  },
+  "Cart":{
+    "type":"object",
+    "properties":{
+      "CartId":{
+        "type":"Number",
+        "example":""
+    },
+      "UserId":{
+        "type":"String",
+        "example":""
+    },
+    "CourseId":{
+        "type":"Number",
+        "example":""
+    }
+   
+    }
+  },
+  "Review":{
+    "type":"object",
+    "properties":{
+      "ReviewId":{
+        "type":"Number",
+        "example":""
+    },
+    "UserId":{
+        "type":"String",
+        "example":""
+    },
+   "ratingNo":{
+    "type":"Number",
+    "example":""
+   },
+   "CourseId":{
+    "type":"Number",
+    "example":""
+},
+"Comment":{
+  "type":"String",
+  "example":""
+}
+    }
+  },
+  "Rating":{
+    "type":"object",
+    "properties":{
+      "ratingNo":{
+        "type":"Number",
+        "example":""
+       },
+       "ratingName":{
+        "type":"String",
+        "example":""
+       }
+    }
+  },
+  "Quiz":{
+    "type":"object",
+    "properties":{
+      "QuizId":{
+        "type":"Number",
+        "example":""
+    },
+    "CategoryId":{
+        "type":"Number",
+        "example":""
+    },
+    "SubCategoryId":{
+        "type":"Number",
+        "example":""
+    },
+    "CourseId":{
+        "type":"Number",
+        "example":""
+    },
+    "QuizTimeDuration":{
+        "type":"String",
+        "example":""
+    },
+    "NoofQuizQuestion":{
+        "type":"Number",
+        "example":""
+    },
+    "QuizMarkingSchema":{
+        "type":"Number",
+        "example":""
+    },
+    "QuizTitle":{
+        "type":"String",
+        "example":""
+    },
+    "QuizQuestionNo":{
+     "type":"Number",
+     "example":""
+    }
+    
+    }
+  },
+  "OuizQuestion":{
+    "type":"object",
+    "properties":{
+      "QuizQuestionId":{
+        "type":"Number",
+        "example":""
+      },
+      "QuizId":{
+        "type":"Number",
+        "example":""
+      },
+      "QuizQuestion":{
+        "type":"String",
+        "example":""
+      
+    },
+    "Option1":{
+        "type":"String",
+        "example":"" 
+    },
+    "Option2":{
+        "type":"String", 
+        "example":""
+    },
+    "Option3":{
+        "type":"String",
+        "example":"" 
+    },
+    "Option4":{
+        "type":"String",
+        "example":"" 
+    },
+    "CorrectAnswer":{
+        "type":"String",
+        "example":""
+    }
+    }
+  },
+  "Score":{
+    "type":"object",
+    "properties":{
+      "UserId":{
+        "type":"String",
+        "example":""
+          },
+    "CourseId":{
+     "type":"Number",
+     "example":""
+        },
+    "CategoryId":{
+        "type":"Number",
+        "example":""
+          },
+    "SubCategoryId":{
+        "type":"Number",
+        "example":""
+             },   
+       "QuizId":{
+        "type":"Number",
+        "example":""
+          },
+    "TotalQuestion":{
+        "type":"Number",
+        "example":""
+          },
+    "TotalCorrectAnswer":{
+        "type":"Number",
+        "example":""
+    },
+    "TotalWorngAnswer":{
+        "type":"Number",
+        "example":""
+    }
+    }
+  },
+ 
+  "BillingDetails":{
+    "type":"object",
+    "properties":{
+      "BillinId":{
+        "type":"Number",
+        "example":""
+    },
+      "CountryId":{
+        "type":"Number",
+        "example":""
+    },
+    "StateId":{
+      "type":"Number",
+      "example":""
+  },
+  "UserId":{
+    "type":"String",
+    "example":""
+},
+"OrderId":{
+  "type": "Number",
+  "example":""
+}
+
+    }
+  },
+  "State":{
+    "type":"object",
+    "properties":{
+      "State":{
+        "type":"String",
+        "example":""
+    },
+    "isoCode":{
+        "type":"String",
+        "example":""
+    },
+    "countryCode":{
+        "type":"String",
+        "example":""
+    },
+    "latitude":{
+        "type":"String",
+        "example":""
+    },
+    "longitude":{
+        "type":"String",
+        "example":""
+    },
+    "StateId":{
+        "type":"Number",
+        "example":""
+    }
+    }
+  },
+  "Country":{
+    "type":"object",
+    "properties":{
+      "CountryName":{
+        "type":"String",
+        "example":""
+    },
+    "countryCode":{
+     "type":"String",
+     "example":""
+    },   
+    "CountryId":{
+        "type":"Number",
+        "example":""
+    }
+    }
+  },
+  "Order":{
+    "type":"object",
+    "properties":{
+      "CourseId":{
+        "type":"Number",
+        "example":""
+    },
+    "OrderId":{
+        "type": "Number",
+        "example":""
+    },
+    "Total":{
+        "type":"Number",
+        "example":""
+    }
+    }
+  },
+  "Admin":{
+    "type":"object",
+    "properties":{
+      "Email":{
+        "type":"String",
+        "example":""
+       
+    },
+    "Password":{
+        "type":"String",
+        "example":""
+        
+    }
+    }
+  }  ,
+  "File":{
+    "type":"object",
+    "properties":{
+      "BannerId":{
+        "type":"Number",
+        "example":""
+    },
+    "file":{
+        "type":"String",
+        "example":""
+        
+    }
+    }
+  } ,
+  "lessonIscomplated":{
+    "type":"object",
+    "properties":{
+      "lessionId":{
+        "type":"Number",
+        "example":""
+    },
+    "UserId":{
+        "type":"String",
+        "example":""
+    },
+    "CourseId":{
+        "type":"Number",
+        "example":""
+    },
+    "CategoryId":{
+        "type":"Number",
+        "example":""
+    },
+    "SubCategoryId":{
+        "type":"Number",
+        "example":""
+    },
+"Iscomplated":{
+    "type":"Boolean",
+    "example":""
+}
+    }
+  }           
+                  }
+}

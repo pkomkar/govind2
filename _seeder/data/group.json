@@ -1,0 +1,14 @@
+[
+    {
+        "GroupId":1,
+        "GroupName":"Admin"
+    },
+    {
+        "GroupId":2,
+        "GroupName":"Patient"
+    },
+    {
+        "GroupId":3,
+        "GroupName":"Doctor"
+    }
+]

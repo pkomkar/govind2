@@ -1,0 +1,22 @@
+[
+    {
+        "ratingNo":1,
+        "ratingName":"Poor"
+    },
+    {
+        "ratingNo":2,
+        "ratingName":"Average"
+    },
+    {
+        "ratingNo":3,
+        "ratingName":"Good"
+    },
+    {
+        "ratingNo":4,
+        "ratingName":"Best"
+    },
+    {
+        "ratingNo":5,
+        "ratingName":"Exccelent"
+    }
+]
